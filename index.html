@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ajout de la font Roboto et des icones de Material
+    ajout de la librairie Material pour Vue
+    ajout du thème Matrial par défault -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/theme/default-dark.css">
+    <link rel="stylesheet" href="index.css">
+    <title>FirstApp</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- lecture de la valeur "tooltip" dans js et écriture dans l'attribut "title" sur html-->
+        <md-toolbar class="md-primary">
+            <h3 v-bind:title="tooltip" class="md-title">{{title}}</h3>
+        </md-toolbar>
+
+        <p v-if="seen">On me voit</p>
+
+        <!--création d'une li todo pour chaque élément de la todoList-->
+        <md-list>
+            <md-list-item v-for="todo in todoList">{{todo}}</md-list-item>
+        </md-list>
+
+        <form>
+            <md-field>
+                <label>What's next?</label>
+                <md-input v-model="todoName"></md-input>
+            </md-field>
+            <md-button class="md-raised md-primary" v-on:click="addNewTodo">Add New Todo</md-button>
+        </form>
+    </div>
+
+    <!-- ajout des librairies javascript vue et vue material
+    ajout de mon ficher javascript avec mon application "app"
+    html lit de haut en bas de manière bloquante, 
+    il faut donc placer les scripts javascript à la fin du body-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-material@beta"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
