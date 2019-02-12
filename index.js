@@ -7,7 +7,7 @@ var app = new Vue ({
         title: 'Here is your Todo List, Enjoy!',
         tooltip: 'ceci est un tooltip',
         seen: false,
-        todoList: ['Wake up with the Sun', 'Eat BreakFast', 'Have fun while learning to code my first apps', '🤯 😁'],
+        todoList: ['Wake up with the Sun', 'Eat BreakFast', 'Have fun learning to code my first apps', '😁'],
         todoName: '',
     },
     methods: {
