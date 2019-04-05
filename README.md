@@ -1,11 +1,10 @@
 # Simple Todo List
 
-Simple app to create a Todo List. The user can add his/her own todo. 
+## Creating a very simple app to add new Todos to a Todo List, using:
 
-Written with :
-- HTML
-- CSS 
-- [VUE.JS](https://fr.vuejs.org/) 
-- [Material Design for VUE](https://vuematerial.io/components/app)
+- HTML5
+- CSS3 
+- [VUE.JS](https://fr.vuejs.org/) (add new todo)
+- [Material Design for VUE](https://vuematerial.io/components/app) (toolbar, list, form)
 
 Hosted with Github Page, you can visit it [here](https://campalo.github.io/TodoList/) 
